@@ -289,7 +289,7 @@
 
 <div class="device" id="device">
   <div class="device-header">
-    <div class="device-title"><b>UNIT-07</b> · presence scanner</div>
+    <div class="device-title"><b>UNIT-07</b> · security scanner</div>
     <div class="led" id="led"></div>
   </div>
 
@@ -330,9 +330,9 @@
 
   const scanSteps = [
     'calibrating sensors',
-    'listening for motion',
+    'scanning apps',
     'triangulating signal',
-    'cross-referencing',
+    'detecting compromise',
     'isolating source'
   ];
 
@@ -421,8 +421,8 @@
 
     // repeated "Hello" responses, each closer / stranger
     const stages = [
-      { body: '1 presence detected.\nsource: you.\nno further anomalies.', sub: 'confidence 98% · loc 0.0m from sensor' },
-      { body: '2 presences detected.\nsource A: you.\nsource B: unclassified.', sub: 'confidence 71% · loc 2.4m from sensor' },
+      { body: '7 virus detected.\nsource: unknown software.\nno further anomalies.', sub: 'confidence 100% · loc 0.0m from sensor' },
+      { body: '10 virus detected.\nsource A: unknown software.\nsource B: unclassified.', sub: 'confidence 71% · loc 2.4m from sensor' },
       { body: 'hello', sub: 'confidence — · loc 2.4m from sensor' },
       { body: 'hello\nhello', sub: 'confidence — · loc 1.1m from sensor' },
       { body: 'hello\nhello\nhello', sub: 'confidence — · loc 0.3m from sensor · CLOSING' },
