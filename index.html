@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UNIT-07 // SCAN</title>
 <style>
   @font-face {
@@ -282,6 +283,30 @@
     0% { background: #0d0f0d; }
     50% { background: #1a2418; }
     100% { background: #0d0f0d; }
+  }
+
+  /* Responsive tweaks for small screens (keeps original layout/behavior intact) */
+  @media (max-width: 520px) {
+    html, body { overflow: auto; }
+    .device-header { padding: 12px 14px 10px; }
+    .device-title { font-size: 11px; }
+    .screen { margin: 14px 14px; height: calc(50vw); padding: 12px; }
+    .screen-grid { background-size: 18px 18px; }
+    .idle-glyph { font-size: 12px; }
+    .status-line { font-size: 12px; }
+    .result-body { font-size: 14px; }
+    .controls { padding: 12px 14px 16px; }
+    .scan-btn { padding: 11px 0; font-size: 13px; }
+    .footer-meta { padding: 0 14px 12px; font-size: 9px; }
+    .contact-wrap { padding: 0 14px 16px; }
+    .contact-btn { font-size: 11px; padding: 10px 0; }
+  }
+
+  @media (max-width: 360px) {
+    .device { border-radius: 4px; }
+    .screen { height: calc(60vw); }
+    .result-body { font-size: 13px; }
+    .device-title { letter-spacing: 0.1em; }
   }
 </style>
 </head>
